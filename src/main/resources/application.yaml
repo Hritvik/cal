@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Calorie Counter
+  data:
+    mongodb:
+      uri: mongodb+srv://cal:cal@vik.ftcozq9.mongodb.net/vik?retryWrites=true&w=majority&appName=vik
+  security:
+    user:
+      name: admin
+      password: 1729
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+logging:
+  level:
+    root: INFO
