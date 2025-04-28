@@ -3,7 +3,7 @@ spring:
     name: Calorie Counter
   data:
     mongodb:
-      uri: mongodb+srv://cal:cal@vik.ftcozq9.mongodb.net/vik?retryWrites=true&w=majority&appName=vik
+      uri: mongodb+srv://cal:cal@vik.ftcozq9.mongodb.net/cal?retryWrites=true&w=majority&appName=vik
   security:
     user:
       name: admin

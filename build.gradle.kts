@@ -43,7 +43,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("io.github.microutils:kotlin-logging:2.1.23")
 	implementation("org.springframework.boot:spring-boot-starter-security")
-
+	implementation("io.micrometer:micrometer-tracing-bridge-brave")
+	implementation("io.micrometer:micrometer-tracing")
+	implementation("io.micrometer:context-propagation")
 
 	compileOnly("org.projectlombok:lombok")
 
@@ -54,7 +56,7 @@ dependencies {
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")
-	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo:3.4.0")
+	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
 
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }

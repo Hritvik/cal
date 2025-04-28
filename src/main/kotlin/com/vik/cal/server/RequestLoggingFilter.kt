@@ -12,7 +12,11 @@ class RequestLoggingFilter : WebFilter {
     private val logger = KotlinLogging.logger {}
 
     override fun filter(exchange: ServerWebExchange, chain: WebFilterChain): Mono<Void> {
-        logger.info("Incoming request: ${exchange.request.method} ${exchange.request.uri} with query params: ${exchange.request.queryParams}")
+        val request = exchange.request
+
         return chain.filter(exchange)
+            .doOnEach { signal ->
+                logger.info("Incoming request: ${request.method} ${request.uri}")
+            }
     }
 }
