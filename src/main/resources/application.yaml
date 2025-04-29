@@ -8,6 +8,11 @@ spring:
     user:
       name: admin
       password: 1729
+cache:
+  caffeine:
+    maximum-size: 100
+    expire-after-write: 10
+    expire-after-write-unit: MINUTES
 springdoc:
   api-docs:
     enabled: true

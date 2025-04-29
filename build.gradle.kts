@@ -36,6 +36,7 @@ dependencies {
 	implementation("io.micrometer:micrometer-tracing-bridge-brave")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 	implementation("org.springframework.cloud:spring-cloud-starter-gateway")
 	implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.8.6")
@@ -46,6 +47,8 @@ dependencies {
 	implementation("io.micrometer:micrometer-tracing-bridge-brave")
 	implementation("io.micrometer:micrometer-tracing")
 	implementation("io.micrometer:context-propagation")
+	implementation("org.springframework.boot:spring-boot-starter-cache")
+	implementation("com.github.ben-manes.caffeine:caffeine")
 
 	compileOnly("org.projectlombok:lombok")
 

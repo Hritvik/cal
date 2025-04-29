@@ -1,4 +1,4 @@
-package com.vik.cal.server
+package com.vik.cal.web.server
 
 
 import org.springframework.context.annotation.Bean
