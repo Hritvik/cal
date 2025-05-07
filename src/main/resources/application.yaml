@@ -6,8 +6,8 @@ spring:
       uri: {MONGO_CONNECTION_URL}
   security:
     user:
-      name: admin
-      password: 1729
+      name: {SPRING_USER_NAME}
+      password: {SPRING_USER_PASSWORD}
 cache:
   caffeine:
     maximum-size: 100
