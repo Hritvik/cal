@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Calorie Counter
+  data:
+    mongodb:
+      uri: ${MONGO_CONNECTION_URL}
+  security:
+    user:
+      name: ${SPRING_USER_NAME}
+      password: ${SPRING_USER_PASSWORD}
+server:
+  port: ${SERVER_PORT}
+cache:
+  caffeine:
+    maximum-size: 100
+    expire-after-write: 10
+    expire-after-write-unit: MINUTES
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+logging:
+  level:
+    root: INFO
